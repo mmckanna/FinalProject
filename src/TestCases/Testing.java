@@ -1,31 +1,47 @@
 package TestCases;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
-
-import Decoractor.BasicAttributes;
-import Decoractor.BasicCharacter;
-import Decoractor.StormtrooperDecorator;
+import java.net.*;
+import javax.swing.*;
+import java.util.*;
+import Decoractor.*;
+import Decoractor.CharacterInterface;
+import Decoractor.RebelSoldierDecorator;
+import Factory.*;
 import Factory.Character;
-import Factory.CharacterFactory;
-import Factory.CreateCharacter;
-import Factory.Jedi;
-import Factory.RebelSoldier;
-import Factory.Sithlord;
-import Factory.Stormtrooper;
+import Proxy.*;
+import Proxy.CharacterComponent;
+
+
+
 class Testing {
 
 	@Test
-	void test() {
+	void TestFactory() {
 		
 		//Creates a character.
 		CharacterFactory factory = new CharacterFactory();
 		CreateCharacter create = new CreateCharacter(factory);
 		
-		Character character = create.createCharacter("Rebel Soldier");
-		System.out.println(character);
-		System.out.println("\n" + "Deploying your " + character.getCharacterType() + " for battle.\n");
+		Character characterType = create.createCharacter("jedi");
+		System.out.println(characterType);
+		System.out.println("\n" + "Deploying your " + characterType.getCharacterType() + " for battle.\n");
 	}
 	
+	@Test
+	void TestDecorator() {
+		
+		BasicAttributes character = new BasicCharacter();
+				
+				
+		BasicAttributes sithlord = new SithlordDecorator(character);
+		System.out.println("Model Type: " + character.getModelType() + "\n" + "Weapon Type: " + character.getWeaponType() + "\n" + 
+				"Armor Amount: " + character.getArmorAmount() + "\n" + "Health Amount: " + character.getHealthLevel() + "\n");
+		
+				
+		System.out.println("Prepare for battle...");
+		
+	}
 }
+

@@ -2,9 +2,9 @@ package Decoractor;
 
 public class StormtrooperDecorator extends BasicAttributes {
 	
-	public StormtrooperDecorator (Character character) {
-		modelType = "Jedi";
-		weaponType = "Lightsaber";
+	public StormtrooperDecorator (BasicAttributes stormtrooper) {
+		modelType = "Stromtrooper";
+		weaponType = "Blaster";
 		armorAmount = 150;
 		healthLevel = 150;
 	

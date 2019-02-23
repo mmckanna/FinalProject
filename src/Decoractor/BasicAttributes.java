@@ -1,6 +1,6 @@
 package Decoractor;
 
-public class BasicAttributes {
+public abstract class BasicAttributes {
 	
 	static String modelType = "Default Stromtrooper ";
 	static String weaponType = "with standard weapons. ";
