@@ -4,6 +4,6 @@ public class Jedi extends Character{
 	
 	public Jedi() {
 		
-		characterType = "Rebel Soldier";
+		characterType = "Jedi";
 	}
 }
