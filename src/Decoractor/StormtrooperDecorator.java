@@ -6,7 +6,5 @@ public class StormtrooperDecorator extends BasicAttributes {
 		modelType = "Stromtrooper";
 		weaponType = "blaster rifle";
 		healthLevel = 150;
-	
 	}
-
 }

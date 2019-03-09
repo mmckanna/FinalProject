@@ -6,7 +6,5 @@ public class SithlordDecorator extends BasicAttributes {
 		modelType = "Sithlord";
 		weaponType = "red Lightsaber";
 		healthLevel = 750;
-	
 	}
-
 }

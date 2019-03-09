@@ -7,5 +7,4 @@ public class RebelSoldier extends Character {
 		characterType = "Rebel Soldier";
 		
 	}
-
 }

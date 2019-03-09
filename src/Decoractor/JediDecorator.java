@@ -6,7 +6,5 @@ public class JediDecorator extends BasicAttributes {
 		modelType = "Jedi";
 		weaponType = "blue Lightsaber";
 		healthLevel = 500;
-	
-	}
-
+		}
 }

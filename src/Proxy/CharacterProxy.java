@@ -5,7 +5,7 @@ import java.awt.*;
 import javax.swing.*;
 
 
-public class CharacterProxy {
+public class CharacterProxy implements Icon {
 	
 	volatile ImageIcon imageIcon;
 	final URL imageURL;
@@ -45,7 +45,7 @@ public class CharacterProxy {
 				retrievalThread = new Thread(new Runnable() {
 					public void run() {
 						try {
-							setImageIcon(new ImageIcon(imageURL, "Stormtrooper Image"));
+							setImageIcon(new ImageIcon(imageURL, "Character Image"));
 							c.repaint();
 						} catch (Exception e) {
 							e.printStackTrace();
@@ -56,5 +56,4 @@ public class CharacterProxy {
 			}
 		}
 	}
-
 }

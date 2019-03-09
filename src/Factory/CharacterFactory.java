@@ -17,5 +17,4 @@ public class CharacterFactory {
 		}
 		return character;
 	}
-
 }

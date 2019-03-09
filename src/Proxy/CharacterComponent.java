@@ -24,5 +24,4 @@ public class CharacterComponent extends JComponent{
 		int y = (1000 - h)/2;
 		icon.paintIcon(this, g, x, y);
 	}
-
 }

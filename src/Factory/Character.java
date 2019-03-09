@@ -11,8 +11,7 @@ public class Character {
 	public String toString() {
 		
 		StringBuffer display = new StringBuffer();
-		display.append("You have selected: " + characterType + ". " + "Prepare for battle");
-		
+		display.append("You have selected: " + characterType + ". " + "Prepare for battle");	
 			
 		return display.toString();
 	}

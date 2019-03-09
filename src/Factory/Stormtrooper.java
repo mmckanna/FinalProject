@@ -4,8 +4,6 @@ public class Stormtrooper extends Character {
 	
 	public Stormtrooper() {
 		
-		characterType = "Stormtrooper";
-		
+		characterType = "Stormtrooper";	
 	}
-
 }

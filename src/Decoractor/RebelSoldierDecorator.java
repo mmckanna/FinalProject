@@ -6,7 +6,5 @@ public class RebelSoldierDecorator extends BasicAttributes {
 		modelType = "Rebel Soldier";
 		weaponType = "blaster rifle";
 		healthLevel = 100;
-	
 	}
-
 }

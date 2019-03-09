@@ -17,5 +17,4 @@ public abstract class BasicAttributes {
 	public int getHealthLevel() {
 		return healthLevel;
 	}
-	
 }
